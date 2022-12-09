@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Bee🐝</title>
+  </head>
+  <body>
+    <div class="App">
+      <!-- #region Nav-->
+      <nav id="nav" class="bg-dark txt-white"></nav>
+      <!-- #endregion -->
+      <div class="home-container">
+        <div class="product-description">
+          <img
+            class="product-page-image"
+            src="../resources/bee.jpg"
+            alt="product-image"
+          />
+          <div class="product-detials">
+            <p class="products-title fs-500">title</p>
+
+            <p class="product-page-category fs-300">Categories</p>
+            <p class="product-page-count fs-300">Count</p>
+            <p class="product-rating flex fs-400">
+              rate <img src="../assets/Filled_star.png" />
+            </p>
+            <p class="products-price">55$</p>
+            <form class="flex" id="add_to_cart_form" onsubmit="addToCart(this)">
+              <button
+                id="add_cart_btn"
+                class="product-page-to-cart-button bg-light"
+              >
+                Add to Cart
+              </button>
+              <select name="to_cart_quanty" id="to_cart_quanty">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <hr id="hr" />
+        <div class="product-description descrip fs-400"></div>
+
+        <br /><br /><br /><br />
+        <h2 class="txt-dark headline">Recommended for you</h2>
+        <div id="products-grid"></div>
+
+        <br /><br /><br /><br /><br /><br />
+
+        <!-- #region categories-->
+
+        <a class="anchor_style" href="./products.html"
+          ><h2 class="txt-dark headline">Categories</h2></a
+        >
+        <div id="home-categories">
+          <div class="flex-item">
+            <a
+              class="anchor_style"
+              href="./products.html?search=&category=women's+clothing"
+            >
+              <img
+                class="categories-image"
+                src="../assets/women_clothing.svg"
+                alt="women_cloths_category"
+              />
+              <p class="categories-headline fs-400">Women's clothes</p>
+            </a>
+          </div>
+          <div class="flex-item">
+            <a
+              class="anchor_style"
+              href="./products.html?search=&category=electronics"
+            >
+              <img
+                class="categories-image"
+                src="../assets/electronics.svg"
+                alt="electronics_category"
+              />
+              <p class="categories-headline fs-400">Electronics</p>
+            </a>
+          </div>
+          <div class="flex-item">
+            <a
+              class="anchor_style"
+              href="./products.html?search=&category=men's+clothing
+            "
+              ><img
+                class="categories-image"
+                src="../assets/men_clothing.svg"
+                alt="men_clothing_category"
+              />
+              <p class="categories-headline fs-400">Men's Clothes</p></a
+            >
+          </div>
+          <div class="flex-item">
+            <a
+              class="anchor_style"
+              href="./products.html?search=&category=jewelery
+            "
+              ><img
+                class="categories-image"
+                src="../assets/jewelry.svg"
+                alt="jewerly_category"
+              />
+              <p class="categories-headline fs-400">Jewerly</p></a
+            >
+          </div>
+        </div>
+        <!-- #endregion -->
+      </div>
+      <footer id="footer" class="bg-dark txt-white"></footer>
+    </div>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/product.js"></script>
+    <script src="../js/nav.js"></script>
+  </body>
+</html>

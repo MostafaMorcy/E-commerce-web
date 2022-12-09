@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Our collection</title>
+  </head>
+  <body onload="displayProducts()">
+    <!-- #region Nav-->
+    <nav id="nav" class="bg-dark txt-white"></nav>
+    <!-- #endregion -->
+
+    <main id="products-page" class="flex">
+      <form action="#" id="search-filters" class="flex">
+        <!-- Search products by name -->
+        <details id="search">
+          <summary>Search</summary>
+          <section>
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="search products"
+            />
+          </section>
+        </details>
+
+        <!-- Search products by category & price range -->
+        <details id="filters">
+          <summary>Filters</summary>
+          <section id="categories-filter">
+            <p class="fs-300 fw-bold">Categories</p>
+            <br />
+            <input
+              type="checkbox"
+              id="women's clothing"
+              name="category"
+              value="women's clothing"
+            />
+            <label for="women's clothing"> women's clothing</label><br />
+
+            <input
+              type="checkbox"
+              id="men's clothing"
+              name="category"
+              value="men's clothing"
+            />
+            <label for="men's clothing"> men's clothing</label><br />
+
+            <input
+              type="checkbox"
+              id="jewelery"
+              name="category"
+              value="jewelery"
+            />
+            <label for="jewelery"> jewelery</label><br />
+
+            <input
+              type="checkbox"
+              id="electronics"
+              name="category"
+              value="electronics"
+            />
+            <label for="electronics"> electronics</label><br />
+          </section>
+          <hr />
+          <section>
+            <p class="fs-300 fw-bold">Price range</p>
+            <input
+              type="range"
+              name="priceRange"
+              min="0"
+              max="1000"
+              value="0"
+              class="slider"
+              id="myRange"
+            />
+          </section>
+        </details>
+        <input type="submit" id="search-button" value="Apply Filters" />
+      </form>
+      <section id="products-grid">
+        <!-- Products from products JSON goes here, coming from app.js -->
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-dark txt-white"></footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/nav.js"></script>
+  </body>
+</html>

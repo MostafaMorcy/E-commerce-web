@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>🐝Checkout</title>
+ 
+</head>
+<body>
+   <!-- #region Nav-->
+   <nav id="nav" class="bg-dark txt-white"></nav>
+  <!-- #endregion -->
+    <div class="mian_cheackout">
+        <div class="child_cheackout">
+            <div class="proces">
+                <div class="proces_cart" style="border-radius: 100px;height: 60px;width: 60px;background-color: rgb(255, 203, 5);">
+                    <img src="../resources/cart2.png" alt="cart" width="60px" height="60px">
+                </div>
+                <div class="linespace"></div>
+                <div class="cheackout_proces" style="border-radius: 100px;height: 60px;width: 60px;background-color: rgb(255, 203, 5);"><img src="../resources/food-delivery.png" width="60px" height="60px"></div>
+                <div class="linespace"></div>
+                <div class="done_proces" style="border-radius: 100px;height: 60px;width: 60px;background-color: gray;"><img src="../resources/deliver.png" width="60px" height="60px"></div>
+
+            </div>
+            <!-- 
+///////////////////////// information form -->
+
+            <form action="order_done.html" id="form_checkout_id">
+                <div id="f_l_name" class="form_div_class_checkout">
+                    <input class="w3-input form_div_class_2items" type="text" placeholder="First Name" id="F_name" required>
+                    <input class="w3-input form_div_class_2items" type="text" placeholder="Last Name" id="L_name" required onblur="check_validation_text('L_name')">
+                </div>
+
+                <div id="phone" class="form_div_class_checkout">
+                    <input class="w3-input" type="tel" placeholder="Phone" id="Phone" required onblur="check_validation_text('Phone')" pattern="[0-9]{11}">
+                </div>
+                <div id="city_street" class="form_div_class_checkout">
+                    <select class="w3-input form_div_class_2items" id="City" placeholder="City" required>
+                        <option value="Cairo">Cairo</option>
+                        <option value="Alexandria">Alexandria</option>
+                        <option value="Giza">Giza</option>
+                        <option value="Qalyubia">Qalyubia</option>
+                        <option value="Port Said">Port Said</option>
+                        <option value="Suez">Suez</option>
+                        <option value="Gharbia">Gharbia</option>
+                        <option value="Luxor">Luxor</option>
+                        <option value="Mansoura">Mansoura</option>
+                        <option value="Asyut">Asyut</option>
+                        <option value="Ismailia">Ismailia</option>
+                        <option value="Faiyum">Faiyum</option>
+                        <option value="Sharqia">Sharqia</option>
+                        <option value="Damietta">Damietta</option>
+                        <option value="Aswan">Aswan</option>
+                        <option value="Minya">Minya</option>
+                        <option value="Beheira">Beheira</option>
+                        <option value="Beni Suef">Beni Suef</option>
+                        <option value="Red Sea">Red Sea</option>
+                        <option value="Qena">Qena</option>
+                        <option value="Sohag">Sohag</option>
+                        <option value="North Sinai">North Sinai</option>
+                    
+                    </select>
+                    <input class="w3-input form_div_class_2items" type="text" id="Street" placeholder="Street">
+                </div>
+                <div id="email" class="form_div_class_checkout">
+                    <input class="w3-input" type="email" placeholder="Email" id="Email" required>
+                </div>
+                <div id="signup_signin_buttons" class="form_div_class_checkout" style="margin-top: 25px; width: 90%;">
+                    <input class="w3-input  submitcolor" type="submit" value="ok" onclick="submmition(event)">
+                </div>
+                <div style="height: 20px;"></div>
+
+        </div>
+
+        <!-- /////////////////////////////// -->
+    </div>
+    </div>
+
+    <footer id="footer" class="bg-dark txt-white"></footer>
+
+
+    <script src="../js/checkout.js"></script>
+    <script src='../js/nav.js'></script>
+</body>
+
+</html>
