@@ -47,13 +47,12 @@ footer.innerHTML = `<div id="about">
 <span>Full Stack Development using Python</span>
 
 <div>Developed by
-<span>Group 1 Team 7</span>
 <br>
-Adham Khatean 
+Mostafa Mahmoud
 -
-Ahmed Mahmoud 
--
-Aya Maged </div>
+Mariam S
+.bakr-
+Doha elgabry </div>
 </div>
 <div id="footer-links">
 <a href="./home.html">Home</a>
