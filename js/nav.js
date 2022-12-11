@@ -42,9 +42,9 @@ const footer = document.getElementById("footer");
 footer.innerHTML = `<div id="about">
 <h3>Bee🐝</h3>
 <span
-  >@copyright ITI-Intensive Program 2021-2022 Q2 Menia Branch
+  >@copyright ITI-Intensive Program Aswan Branch
 </span>
-<span>Full Stack Development using Python</span>
+<span>MERAN Stack Development</span>
 
 <div>Developed by
 <br>
