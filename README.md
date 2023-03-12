@@ -10,7 +10,7 @@ This is an e-commerce website built with HTML5, CSS3, and vanilla JavaScript.
 - Login page
 - sign up page
 
-This project is part of our participation in ITI's Intensive Trainnig Program Aswan Branch <MERAN STACK>.
+This project is part of our participation in ITI's Intensive Trainnig Program  <MERAN STACK>.
 
 ## Getting Started
 
